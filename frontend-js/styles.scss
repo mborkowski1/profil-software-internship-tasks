@@ -1,0 +1,72 @@
+$primaryColor: #7E57C2;
+$secondaryColor: #64B5F6;
+$accentColor: #26F0F1;
+$hoverColor: #9575CD;
+$buttonColor: #1976D2;
+$buttonHoverColor: #1E88E5;
+$borderColor: #212121;
+
+@mixin border {
+  border: 1px solid $borderColor;
+}
+
+@mixin bgColor($color) {
+  background-color: $color;
+}
+
+table {
+  @include border;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 600px;
+
+  thead {
+    tr {
+      @include bgColor($primaryColor);
+      position: sticky;
+      top: 0;
+
+      th {
+        @include border;
+
+        &:nth-child(n+3):hover {
+          @include bgColor($hoverColor);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        @include bgColor($secondaryColor);
+      }
+
+      td {
+        @include border;
+
+        &:first-child {
+          @include bgColor($accentColor);
+          position: sticky;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+button {
+  @include bgColor($buttonColor);
+  font-size: 1rem;
+  border: 0;
+
+  &:hover {
+    @include bgColor($buttonHoverColor);
+  }
+}
+
+div:nth-last-of-type(2) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

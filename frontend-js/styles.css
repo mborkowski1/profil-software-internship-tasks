@@ -1,0 +1,35 @@
+table {
+  border: 1px solid #212121;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 600px; }
+  table thead tr {
+    background-color: #7E57C2;
+    position: sticky;
+    top: 0; }
+    table thead tr th {
+      border: 1px solid #212121; }
+      table thead tr th:nth-child(n+3):hover {
+        background-color: #9575CD;
+        cursor: pointer; }
+  table tbody tr:nth-child(even) {
+    background-color: #64B5F6; }
+  table tbody tr td {
+    border: 1px solid #212121; }
+    table tbody tr td:first-child {
+      background-color: #26F0F1;
+      position: sticky;
+      left: 0; }
+
+button {
+  background-color: #1976D2;
+  font-size: 1rem;
+  border: 0; }
+  button:hover {
+    background-color: #1E88E5; }
+
+div:nth-last-of-type(2) {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

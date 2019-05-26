@@ -1,0 +1,13 @@
+{
+  "name": "frontend-js",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Michał Borkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "node-fetch": "^2.6.0"
+  }
+}

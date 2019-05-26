@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffff99; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "menu-box box-1 box-1 box-1" "menu-box . box-2 ." "menu-box box-3 box-4 box-5" "menu-box box-3 box-6 box-6"; }
+  #wrapper > *:not(:first-child) {
+    padding: 15px;
+    margin: 15px;
+    background-color: aquamarine; }
+  #wrapper #menu-box {
+    grid-area: menu-box;
+    background-color: aquamarine;
+    margin-right: 15px;
+    padding: 15px;
+    height: 100vh;
+    top: 0;
+    position: sticky; }
+  #wrapper #box-1 {
+    grid-area: box-1; }
+  #wrapper #box-2 {
+    grid-area: box-2; }
+  #wrapper #box-3 {
+    grid-area: box-3; }
+  #wrapper #box-4 {
+    grid-area: box-4; }
+  #wrapper #box-5 {
+    grid-area: box-5; }
+  #wrapper #box-6 {
+    grid-area: box-6; }
+
+/*# sourceMappingURL=styles.css.map */
